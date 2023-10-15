@@ -14,7 +14,8 @@ Unittest classes:
 import os
 import sys
 import unittest
-from models.engine.file_storage import FileStorage
+from models import storage
+from models import storage
 from console import HBNBCommand
 from io import StringIO
 from unittest.mock import patch
@@ -125,7 +126,7 @@ class TestHBNBCommand_create(unittest.TestCase):
             os.rename("file.json", "tmp")
         except IOError:
             pass
-        FileStorage.__objects = {}
+        storage.__objects = {}
 
     @classmethod
     def tearDown(self):
@@ -207,7 +208,7 @@ class TestHBNBCommand_show(unittest.TestCase):
             os.rename("file.json", "tmp")
         except IOError:
             pass
-        FileStorage.__objects = {}
+        storage.__objects = {}
 
     @classmethod
     def tearDown(self):
@@ -460,7 +461,7 @@ class TestHBNBCommand_destroy(unittest.TestCase):
             os.rename("file.json", "tmp")
         except IOError:
             pass
-        FileStorage.__objects = {}
+        storage.__objects = {}
 
     @classmethod
     def tearDown(self):
@@ -714,7 +715,7 @@ class TestHBNBCommand_all(unittest.TestCase):
             os.rename("file.json", "tmp")
         except IOError:
             pass
-        FileStorage.__objects = {}
+        storage.__objects = {}
 
     @classmethod
     def tearDown(self):
@@ -860,7 +861,7 @@ class TestHBNBCommand_update(unittest.TestCase):
             os.rename("file.json", "tmp")
         except IOError:
             pass
-        FileStorage.__objects = {}
+        storage.__objects = {}
 
     @classmethod
     def tearDown(self):
@@ -1509,7 +1510,7 @@ class TestHBNBCommand_count(unittest.TestCase):
             os.rename("file.json", "tmp")
         except IOError:
             pass
-        FileStorage._FileStorage__objects = {}
+        storage._FileStorage__objects = {}
 
     @classmethod
     def tearDown(self):
