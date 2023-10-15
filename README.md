@@ -271,7 +271,7 @@ e952b772-80a5-41e9-b728-6bc4dc5c21b4
     </ul>
 </details>
 <details>
-    <summary>Bamidele Adefolaju</summary>
+    <summary>Mathew Codex</summary>
     <ul>
     <li><a href="https://www.github.com/mathewCodex">Github</a></li>
     <li><a href="https://www.twitter.com/mathew4codex">Twitter</a></li>
