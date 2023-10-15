@@ -3,7 +3,7 @@
 import cmd
 import re
 from shlex import split
-from models.__init__ import storage
+from models import storage
 from models.base_model import BaseModel
 from models.user import User
 from models.state import State
@@ -101,7 +101,7 @@ class HBNBCommand(cmd.Cmd):
         Display the string representation of a class instance of a given id.
         """
         argl = parse(arg)
-        objdict = FileStorage.all()
+        objdict = storage.all()
         if len(argl) == 0:
             print("** class name missing **")
         elif argl[0] not in HBNBCommand.__classes:
